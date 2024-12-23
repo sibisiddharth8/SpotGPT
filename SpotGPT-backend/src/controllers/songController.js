@@ -6,8 +6,6 @@ import mongoose from 'mongoose';
 const addSong = async (req, res) => {
     try {
         const { name, desc, album } = req.body;
-        console.log("Form Data:", req.body);
-        console.log("Uploaded Files:", req.files);
 
         const audioFile = req.files?.audio?.[0];
         const imageFile = req.files?.image?.[0];
