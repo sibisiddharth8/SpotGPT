@@ -46,8 +46,7 @@ const AddSong = () => {
       }
 
     } catch(error){
-      console.error('Error details:', error.response ? error.response.data : error.message);
-  toast.error('Error Occured');
+      toast.error('Error Occured');
     }
     setLoading(false);
   }
@@ -94,7 +93,7 @@ const AddSong = () => {
         </select>
       </div>
 
-      <button className='text-base bg-black text-white py-2.5 px-14' type='submit'>Add </button>
+      <button className='text-base bg-black text-white py-2.5 px-14 cursor-pointer' type='submit'>Add </button>
     </form>
   )
 }
